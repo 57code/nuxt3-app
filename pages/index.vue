@@ -14,6 +14,10 @@
       <strong>{{ todo.title }}</strong>
     </div>
 
+    <button @click="counter++">+</button>
+    {{ counter }}
+    <button @click="counter--">-</button>
+
     <NuxtLink to="/detail">Detail</NuxtLink> |
     <NuxtLink to="/user-admin/1">/user-admin/1</NuxtLink> |
     <NuxtLink to="/parent">/parent/child</NuxtLink> |
@@ -37,4 +41,6 @@ console.log(todos.value);
 //   // pick: ["id", "title", "completed"],
 // });
 
+// 声明SSR友好的状态
+const counter = useCounter();
 </script>
