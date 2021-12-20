@@ -25,22 +25,22 @@
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue';
 const show = ref(false);
 
 // useAsyncData使用
-const { data: todos } = await useAsyncData("todos", () => $fetch("/api/todo"), {
+const { data: todos } = await useAsyncData('todos', () => $fetch('/api/todo'), {
   transform(input) {
-    return input.data;
+    return input.data
   },
   // pick: ['data'],
-});
-console.log(todos.value);
+})
+console.log(todos.value)
 // useFetch使用
 // const { data: todos } = await useFetch("/api/todo", {
 //   // pick: ["id", "title", "completed"],
 // });
 
 // 声明SSR友好的状态
-const counter = useCounter();
+const counter = useCounter()
 </script>
