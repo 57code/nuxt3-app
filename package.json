@@ -4,8 +4,7 @@
     "dev": "nuxt dev",
     "build": "nuxt build",
     "start": "node .output/server/index.mjs",
-    "lint": "eslint . --ext .ts,.vue,.js",
-    "lint-fix": "eslint . --ext .ts,.vue,.js --fix",
+    "lint": "eslint . --ext .ts,.vue,.js --fix",
     "prepare": "husky install"
   },
   "lint-staged": {

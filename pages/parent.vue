@@ -2,6 +2,6 @@
   <div>
     <h1>parent page</h1>
     <!-- 嵌套路由 -->
-    <NuxtChild></NuxtChild>
+    <NuxtChild />
   </div>
 </template>
